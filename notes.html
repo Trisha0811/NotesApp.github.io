@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes taking app</title>
+    <script src="note.js"></script>
+    <style>
+        .write{
+            position: relative;
+            margin: auto;
+            border: 2px solid blue;
+            height: 16vw;
+            width: 50vw;
+            text-align: center;
+            background-color: rgba(29, 245, 0, 0.4);
+            padding: 2vw;
+            margin-bottom: 15px;
+        }
+        .write h2{
+            color: rgb(7, 43, 250);
+        }
+        .write textarea{
+            height: 10vw;
+            width: 45vw;
+            position: absolute;
+            top:6vw;
+            left: 4.1vw;
+            overflow-y:scroll;
+            color: brown;
+            
+            /* margin: auto; */
+        }
+        #btnAdd{
+           height: 3vw;
+           width: 5vw;
+           position: absolute;
+           top: 16.69vw;
+           left: 25vw;
+        }
+        .show{
+            /* border: 2px solid black; */
+            margin: auto;
+            width: 75vw;
+           background-color: rgba(245, 0, 0, 0.4);
+        }
+        .card{
+            display: inline-block;
+            border: 2px solid red;
+            height: 15vw;
+            width: 20vw;
+            margin: 25px;
+            text-align: center;
+        }
+        p{
+            border: 2px solid black;
+            /* display: block; */
+            height: 8vw;
+            width: 15vw;
+            margin: auto;
+        }
+        textarea{
+            border: 2px solid black;
+            /* display: block; */
+            height: 8vw;
+            width: 15vw;
+            /* margin: auto; */
+            margin-left: 0.8vw;
+        }
+        #btnD{
+            /* margin: auto; */
+        }
+    </style>
+</head>
+<body>
+    <div class="write">
+        <h2>Write Notes</h2>
+        <textarea name="notes" id="notes" ></textarea>
+        <button id="btnAdd" onclick="addNotes()">ADD</button>
+    </div>
+    <div class="show" id="show">
+        
+        
+   
+    </div>
+</body>
+</html>
